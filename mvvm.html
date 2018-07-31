@@ -17,7 +17,9 @@
     <p v-html="child.htmlStr"></p>
     <button v-on:click="clickBtn">change model</button>
 </div>
-
+<div class="first">
+  master
+</div>
 <script src="http://cdn.bootcss.com/vue/1.0.25/vue.js"></script>
 <script src="./js/observer.js"></script>
 <script src="./js/watcher.js"></script>
@@ -34,7 +36,6 @@
                 someStr: 'World !'
             }
         },
-
         computed: {
             getHelloWord: function() {
                 return this.someStr + this.child.someStr;
@@ -56,4 +57,5 @@
 </script>
 
 </body>
+
 </html>
